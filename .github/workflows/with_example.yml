@@ -1,0 +1,19 @@
+name: With Example
+on:
+  workflow_dispatch:
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check Node and NPM version
+        run: |
+          echo "Node Version is - $(node --version)"
+          echo "NPM Version is - $(npm --version)"
