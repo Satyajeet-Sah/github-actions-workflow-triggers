@@ -1,4 +1,4 @@
-name: "Events"
+name: "Events - Features"
 
 on:
   workflow_dispatch:
