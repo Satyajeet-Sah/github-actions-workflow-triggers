@@ -7,7 +7,7 @@ jobs:
 
     steps:
       - name: Print Runner Details
-        script: |
+        run: |
           echo "Workflow is executing on a GitHub-hosted runner."
           echo "Runner Name: $RUNNER_NAME"
           echo "Runner OS: $RUNNER_OS"
